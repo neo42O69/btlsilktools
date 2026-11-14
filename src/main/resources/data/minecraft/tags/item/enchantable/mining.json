@@ -1,0 +1,11 @@
+{
+  "values": [
+    "#minecraft:axes",
+    "#minecraft:pickaxes",
+    "#minecraft:shovels",
+    "#minecraft:hoes",
+    "minecraft:shears",
+    "btlsilktools:chisel",
+    "btlsilktools:trowel"
+  ]
+}

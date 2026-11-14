@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chisel",
+  "key": {
+    "/": "minecraft:stick",
+    "I": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    "  I",
+    " I ",
+    "/  "
+  ],
+  "result": {
+    "id": "btlsilktools:chisel"
+  }
+}

@@ -1,0 +1,20 @@
+{
+	"schemaVersion": 1,
+	"id": "btlsilktools",
+	"version": "${version}",
+	"name": "BTL Silk Tools",
+	"description": "Adds tools that can silk touch",
+	"authors": ["battlestickk"],
+	"license": "THXL",
+	"icon": "pack.png",
+	"entrypoints":
+	{
+		"main": ["com.battlestickk.silktools.btlsilktools"]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "26.3",
+		"java": ">=25",
+		"fabric-api": ">=0.165.2+26.3"
+	}
+}
