@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "btlsilktools",
-	"version": "0.fix1",
+	"version": "${version}",
 	"name": "BTL Silk Tools",
 	"description": "Adds tools that can silk touch",
 	"authors": ["battlestickk"],
