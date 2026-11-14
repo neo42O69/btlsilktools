@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "btlsilktools",
-	"version": "${version}",
+	"version": "0.fix1",
 	"name": "BTL Silk Tools",
 	"description": "Adds tools that can silk touch",
 	"authors": ["battlestickk"],
@@ -10,6 +10,12 @@
 	"entrypoints":
 	{
 		"main": ["com.battlestickk.silktools.btlsilktools"]
+	},
+	"contact":
+	{
+		"homepage": "https://modrinth.com/mod/btl-silk-tools",
+		"sources": "https://github.com/neo42O69/btlsilktools",
+		"issues": "https://github.com/neo42O69/btlsilktools/issues"
 	},
 	"depends": {
 		"fabricloader": ">=0.20.1",
