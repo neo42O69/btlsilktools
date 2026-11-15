@@ -9,6 +9,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 
 import java.util.function.Function;
 
@@ -23,18 +24,21 @@ public class moditems {
     {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(btlsilktools.MOD_ID, name),
                 function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(btlsilktools.MOD_ID, name))))); //lowkey idk what this does lol
-    };
+    }
 
     public static void registerModItems()
     {
         btlsilktools.LOGGER.info("Registering items for BTL Silk Tools");
 
         //puts the items in creative tabs
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(output ->
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register
+        (
+                output ->
                 {
                     //everything here goes to the vanilla tools & utilities creative tab
-                    output.accept(CHISEL);
-                    output.accept(TROWEL);
-                });
+                    output.insertAfter(Items.BRUSH, CHISEL); // the chisel is inserted after (to the right of) the vanilla brush
+                    output.insertAfter(CHISEL, TROWEL); // the trowel is inserted after the chisel
+                }
+        );
     }
 }

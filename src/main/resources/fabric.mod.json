@@ -11,6 +11,9 @@
 	{
 		"main": ["com.battlestickk.silktools.btlsilktools"]
 	},
+	"mixins": [
+		"btlsilktools.mixins.json"
+	],
 	"contact":
 	{
 		"homepage": "https://modrinth.com/mod/btl-silk-tools",
