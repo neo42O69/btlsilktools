@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+                {
+                  "type": "minecraft:item",
+                  "condition": "minecraft:tool/always_drops_flint",
+                  "name": "minecraft:flint"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:gravel"
+                }
+          ],
+          "condition":
+          {
+            "type": "minecraft:survives_explosion"
+          }
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:blocks/gravel"
+}

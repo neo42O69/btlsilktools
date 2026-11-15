@@ -19,10 +19,10 @@ also made trowels not drop xp jsut in case
  */
 
 @Mixin(Block.class)
-public abstract class noxpforchisel extends BlockBehaviour
+public abstract class xpdropmixin extends BlockBehaviour
 {
     //this does nothing. ts breaks if I remove this
-    public noxpforchisel(Properties properties) {
+    public xpdropmixin(Properties properties) {
         super(properties);
     }
 
@@ -32,7 +32,7 @@ public abstract class noxpforchisel extends BlockBehaviour
     {
         if (tool.getItem() == moditems.CHISEL || tool.getItem() == moditems.TROWEL) //checks if the tool is chisel or trowel
         {
-            ci.cancel(); //if it's chisel or trowel then don't drop xp
+            ci.cancel(); //if it's chisel or trowel then stop experience drop method -> experience isn't dropped
         }
     }
 }

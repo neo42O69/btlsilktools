@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sieve",
+  "key": {
+    "/": "minecraft:stick",
+    "'": "minecraft:iron_nugget"
+  },
+  "pattern": [
+    "/''",
+    "/''",
+    "/''"
+  ],
+  "result": {
+    "id": "btlsilktools:sieve"
+  }
+}
